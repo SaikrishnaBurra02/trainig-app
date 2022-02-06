@@ -1,0 +1,5 @@
+<select>
+    <option *ngFor ="let ID of IDsList" value="ID">{{ID}}</option>
+</select>
+<button (click) = 'getAllEmployee()'>Search</button>
+<app-employee-table *ngIf = "employeesData" [employeesDataInput] = "employeesData"></app-employee-table>
